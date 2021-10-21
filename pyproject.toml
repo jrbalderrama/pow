@@ -21,7 +21,7 @@ ipython = "^7.28.0"
 pandas = "^1.3.4"
 scikit-learn = "^1.0"
 tokenize-rt = "^4.1.0"
-pow-api = {git = "https://gitlab.inria.fr/spicy/pow-api.git"}
+pow-api = {git = "https://gitlab.inria.fr/spicy/pow-api.git", rev = "main"}
 
 [tool.poetry.dev-dependencies]
 black = "^21.9b0"
