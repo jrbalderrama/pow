@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "pow"
+version = "2.0.0"
+description = "Privacy-enhancing technologies Hands-on Workshop"
+authors = [
+    "jrbalderrama <jrbalderrama@users.noreply.github.com>",
+    "tristan-allard <tristan.allard@irisa.fr>",
+]
+
+repository = "https://gitlab.inria.fr/spicy/pow"
+readme = "README.md"
+license = "CC0-1.0"
+
+[tool.poetry.build]
+generate-setup-file = false
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9"
+ipykernel = "^6.4.1"
+ipython = "^7.28.0"
+pandas = "^1.3.4"
+scikit-learn = "^1.0"
+tokenize-rt = "^4.1.0"
+pow-api = {git = "https://gitlab.inria.fr/spicy/pow-api.git"}
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
