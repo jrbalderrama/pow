@@ -15,14 +15,14 @@ The complete installation sequence is as follows (set the `PATH`
 accordingly):
 
 ```bash
+# clone the project and enter to the repo dir
+git clone https://gitlab.inria.fr/spicy/pow.git pow && cd $_
 # create a virtual environment  
 python3.8 -m venv ${PATH}/venv-pow
 # activate the environment
 source ${PATH}/venv-pow/bin/activate 
 # install the dependency management tool
 pip install poetry
-# clone the project and enter to the repo dir
-git clone https://gitlab.inria.fr/spicy/pow pow && cd $_
 # install dependencies on the environment
 poetry install
 ```
