@@ -1,7 +1,8 @@
 # Privacy-enhancing technologies Hands-on Workshop
 
 ## Install
-This project runs on a Jupyter server compatible with Python 3.8.
+
+This project runs on a Jupyter server compatible with Python 3.7.
 If you run the project on [colab](https://colab.research.google.com/),
 the following installation is optional (unless you would like to run on
 *colab* using local resources).
@@ -27,14 +28,29 @@ pip install poetry
 poetry install
 ```
 
+There is also an [conda](https://docs.conda.io) configuration file
+`environment.yml` provided for cases where the management with `poetry`
+is not possible, in that case instead of the standard install execute:
+
+```bash
+# clone the project and enter to the repo dir
+git clone https://gitlab.inria.fr/spicy/pow.git pow && cd $_
+# create a conda environment 
+conda env create -f environment.yml
+# activate the environment
+conda activate pow
+```
+
 ## Run
+
 The project is organized in self-contained Jupyter notebooks. These are
 located in the `notebooks` directory of the project. There are two ways
 to run them:
 
 - On [colab](https://colab.research.google.com/), click on the links of
   each notebook to copy the notebook to *colab*. You require your own
-  Google credentials to execute it.
+  Google credentials to execute it. Do not forget to restart the notebook
+  after the installation of the dependencies (`pow-api`).
 - On a local instance of a Jupyter server, after the dependencies
   installation, launch Jupyter (copy the link displayed in the terminal
   on a Web browser) and click on a notebook from the list.
